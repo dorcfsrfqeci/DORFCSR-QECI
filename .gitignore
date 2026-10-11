@@ -1,0 +1,25 @@
+# Node and package tooling
+node_modules/
+
+# Composer / PHP dependencies
+vendor/
+
+# Local runtime data
+sessions/
+*.log
+*.tmp
+*.cache
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+
+# Secrets and local environment files
+.env
+.env.*
+config/serviceAccountKey.json
+
+# Keep project SQL scripts and config placeholders tracked
+!create_tables.sql
+!restore_completion_report.sql
+!config/firebase-config.php

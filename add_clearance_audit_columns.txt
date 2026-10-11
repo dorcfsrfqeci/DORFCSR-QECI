@@ -1,0 +1,8 @@
+
+--- RUN: 2026-05-07T00:08:07+02:00 ---
+Created backup structure student_clearance_database_bk_20260507_000807
+ADDED last_updated_by_staff_id
+ADDED last_updated_by_staff_name
+ADDED last_updated_department
+ADDED last_status
+ADDED last_updated_at

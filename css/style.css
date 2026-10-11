@@ -1,0 +1,520 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('/DORCFSRF/assets/BG.jpg') no-repeat center center/cover;
+}
+
+.student {
+  border-radius: 10px;
+  background-color: #57564F;
+  width: 100px;
+  padding: 12px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px auto;
+  font-weight: bold;
+}
+
+
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 35px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+  margin-top: 20px;
+}
+
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;  
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+
+.login-container input,
+.login-container select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-container select {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+}
+
+
+.login-container button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  /* 🔹 cleaned */
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: white;
+}
+
+.login-container button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive helpers (mobile-first) */
+img, video { max-width: 100%; height: auto; }
+button, .button { box-sizing: border-box; }
+
+@media (max-width: 600px) {
+  .login-container { width: calc(100% - 32px); padding: 20px; }
+  .logoqeci { width: 80px; height: 80px; }
+}
+
+.extra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.extra p {
+  margin: 0;
+  line-height: 2;
+  gap: 5px;
+}
+
+.extra a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extra a:hover {
+  text-decoration: underline;
+}
+
+
+.logoqeci {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* FORGOT\.php */
+
+.login-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  padding-top: 50px;
+  width: 350px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1.2s ease-in-out;
+
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px -10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+
+}
+
+.login-container button {
+  display: inline-block;
+  width: 100%;
+  margin: 15px 12px 15px 1px;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: white;
+
+}
+
+.login-container button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.extra {
+  margin-top: 15px;
+  font-size: 14px;
+
+}
+
+.extra a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logoqeci {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+
+
+.extra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.extra p {
+  margin: 0;
+}
+
+.extra a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.extra a:hover {
+  text-decoration: underline;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.btn-container {
+  width: 90%;
+  max-width: 950px;
+  padding: 60px 40px 50px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.12); 
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+  box-shadow: 0 0 15px rgba(6, 6, 6, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+
+.logo-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin: 0 auto 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(5px);
+  border: 3px solid rgba(255,255,255,0.6);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.logo-circle img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+
+h1 {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+p {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+
+.btn {
+  display: inline-block;
+  width: 220px;
+  margin: 15px 10px;
+  padding: 12px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: 0.3s;
+  color: white;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  margin: 8px 0;
+}
+input{
+  width: 100%;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.show-btn i{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: grey;
+  cursor: pointer;
+}
+i.hide-btn::before{
+  content: "\f070";
+}
+
+/* --- RESPONSIVE MOBILE VIEW --- */
+@media screen and (max-width: 768px) {
+  
+  /* 1. Turn Sidebar into a Scrollable Top Menu */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative; /* Unfix it from the side */
+    padding: 10px;
+    border-right: none;
+    border-bottom: 2px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar nav {
+    display: flex;
+    flex-wrap: wrap; /* Allows menu items to wrap to next line */
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .sidebar nav a {
+    margin-bottom: 0;
+    padding: 8px 12px;
+    font-size: 12px;
+    background: #f8f9fa;
+    border-radius: 5px;
+  }
+
+  /* 2. Remove the margin that was pushing content for the sidebar */
+  .content-wrapper {
+    margin-left: 0 !important; 
+    padding: 10px;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  /* 3. Stack Form Grids (Works for your Forms and Records page) */
+  .form-grid-step1, 
+  .form-grid-step2, 
+  .school-grid,
+  .status-cards {
+    grid-template-columns: 1fr !important; /* Forces 1 column */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 4. Make Tables Scrollable (Important for Clearance & Payment) */
+  table {
+    display: block;
+    width: 100%;
+    overflow-x: auto; /* Adds a horizontal scrollbar if table is too wide */
+    white-space: nowrap;
+  }
+
+  /* 5. Adjust Dashboard Cards */
+  .card {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  /* 6. Adjust Header/Search Bar */
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 0;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+}
+

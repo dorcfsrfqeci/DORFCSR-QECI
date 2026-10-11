@@ -1,0 +1,22 @@
+
+--- DIAGNOSTICS RUN: 2026-05-06T23:22:35+02:00 ---
+clearance_approvals_log exists
+Columns:
+ - studentrecord_id (varchar(15))
+ - or_num (varchar(20))
+ - student_id (varchar(10))
+ - student_lastname (varchar(20))
+ - student_firstname (varchar(30))
+ - student_middlename (varchar(30))
+ - student_year (varchar(10))
+ - student_course (varchar(20))
+ - student_section (varchar(5))
+ - student_address (varchar(50))
+ - contact_num (varchar(30))
+ - unit_con (varchar(30))
+ - unit_stats (varchar(20))
+ - release_date (date)
+ - remarks (varchar(100))
+ - received_by (varchar(50))
+ - scholasticrec_stat (varchar(30))
+Row count: 15
